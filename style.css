@@ -1,0 +1,102 @@
+body {
+    background-color: rgb(159, 208, 228);
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.box {
+    background-color: rgba(113, 157, 169, 0.502);
+    height: 500px;
+    width: 300px;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 10px rgba(31, 47, 52, 0.502),
+                -5px -5px 10px rgba(31, 47, 52, 0.502);
+    position: relative;
+}
+
+ul {
+    margin: 0; /* Fixed typo here */
+}
+
+ul > li > img {
+    width: 25px;
+    height: 30px;
+    margin-right: 10px;
+    border-radius: 4px;
+    align-items: center;
+}
+
+ul > li {
+    padding: 10px;
+    background-color: rgb(187, 226, 229);
+    list-style-type: none;
+    margin: 10px;
+    align-items: center;
+    border-radius: 10px;
+    height: 40px;
+    width: 200px;
+    cursor: pointer;
+    box-shadow: 3px 3px 3px rgba(31, 47, 52, 0.502),
+                -3px -3px 3px rgba(31, 47, 52, 0.502);
+}
+
+/* .btnall {
+    display: flex;
+    justify-content: space-around;
+}
+
+button {
+    background-color: rgb(183, 231, 231);
+    border: none;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-top: 20px;
+    cursor: pointer;
+} */
+
+.btnall {
+    display: flex;
+    justify-content: space-between; /* Change to space-between */
+    width: 100%; /* Ensure it takes the full width */
+    margin-top: 20px; /* Optional spacing above the buttons */
+}
+
+button {
+    background-color: rgb(183, 231, 231);
+    border: none;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+.hide {
+    display: none;
+}
+
+.vol {
+    transform: rotate(-90deg);
+    position: absolute;
+    top: 156px;
+    right: -25%;
+    height: 6px;
+    width: 201px;
+}
+
+.progress {
+    background-color: rgb(183, 231, 231);
+    border-radius: 10px;
+    width: 220px;
+    margin-left: 50px;
+}
+
+.prog-status {
+    background-color: rgb(223, 173, 97);
+    width: 0%; /* Start at 0% width */
+    height: 6px;
+    border-radius: 10px;
+}
