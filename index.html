@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="box">
+        <ul id="playlist" class="playlist">
+            <li data-src="nat1.mp3.mp3">
+                <img src="img.jpg" alt="image" /> Song 1
+            </li>
+            <li data-src="nat2.mp3.mp3">
+                <img src="img.jpg" alt="image" /> Song 2
+            </li>
+            <li data-src="nat3.mp3.mp3">
+                <img src="img.jpg" alt="image" /> Song 3
+            </li>
+            <li data-src="nat4,mp3.mp3">
+                <img src="img.jpg" alt="image" /> Song 4
+            </li>
+        </ul>
+        <input
+            type="range"
+            min="0"
+            max="1"
+            step="0.1"
+            oninput="updateVolume()"
+            class="vol"
+            value="0.5"
+            id="volume"
+        />
+        <div class="progress">
+            <div id="songStatus" class="prog-status"></div>
+        </div>
+        <div class="btnall">
+            <button onclick="prevTrack()">Prev</button>
+            <button id="playBtn" onclick="playTrack()">Play</button>
+            <button id="pauseBtn" onclick="pauseTrack()" class="hide">Pause</button>
+            <button onclick="nextTrack()">Next</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
